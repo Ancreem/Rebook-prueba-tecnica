@@ -3,7 +3,9 @@ package com.prueba.web.controller;
 
 import com.prueba.domain.service.ClienteService;
 import com.prueba.persistence.dtos.ClienteDTO;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +15,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/cliente")
-@CrossOrigin("*")
+@CrossOrigin("https://localhost:8080")
+@PreAuthorize("hasRole('ADMIN')")
+@SecurityRequirement(name = "bearerAuth")
 public class ClienteController {
 
     private final ClienteService clienteService;

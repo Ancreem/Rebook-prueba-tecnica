@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="main.js" async></script>
+    <script src="app.js" defer type="module"></script>
+    <link rel="icon" href="resources/Logo.png" type="image/png">
+    <title>Reebook</title>
+  </head>
+
+  <body>
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand"
+        ><i class="bx icon"><img src="./resources/Logo.png" alt="" style="width: 100% ;"></i>Reebook</a>
+      <ul class="side-menu">
+        <li class="divider" data-text="main">Main</li>
+        
+        <li>
+          <a href="#"
+            ><i class="bx icon"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABQElEQVR4nO2YMU4DMRBFjaAEkRMQQZsbpOIatBElh6DclpJTINGgECroSME5kKigiCKKh7wy0hJFycROlg+ZV2ZmbL/9cgqH4DhOMcAx8EL7PAMn65LoA6/8Hm/AaanEGTBJCw6BTsYaNRlzB8BtGp8Cg5CxyA5w2fgq18DeygsViESAXaBqnOMq/hYsAPvATRr8BC5MgxsQ+QY4T6lE7oDDsAxgjD5ji8ifIFhFgii4iBh4IisAdIGHxl/lPGJtBBxl7lGzvsb5s1HCyr2yyEca7y3o6aWed2WR0X9JpBsPaLgjQ+k70ga4iBh4ImLgiYiBJyIGnogYqCWS3s2qjFqNZQNbYwEzj3+VtSYlMnPQHwdmQU0ykWX7kFnLayzERRKeiAqoJEIGwUXwx4ftuSOti6gTDCJP6PNYHK3jbBlfF0oJJl9bKvkAAAAASUVORK5CYII=" /></i
+            >Productos<i class="bx bx-chevron-right icon-right"></i
+          ></a>
+          <ul class="side-dropdown">
+            <div class="product-cont">
+              <li>
+                <a href="#" id="todos">Todos los productos</a>
+              </li>
+            </div>
+          </ul>
+        </li>
+
+        
+        <li>
+          <a href="#"
+            ><i class="bx icon"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB4klEQVR4nO3aPWsUQRzH8RWNaGUh+ALEQlALbdTExjqVEcFKRBALsbHxDahRRPCh8SUYsBSsTKHJSxAFK+FOG0WE4AOKH9njfzAesm4uy90s2W81MP/5zXyZndnj7oqio6NjXWA7buO9/OhjsVxjHZFb8udmHZHSuuR4kRmYjbX16xQPiPYqXla1J41kfbULy8XiRVW7FSI5Yr0iuVNsOpEiU3QimaHbkcwwrR2ZWp5O5G+wgKXk6r+Po0VbdgS78KziXXYPW9og8jQi3uE89uMgLuJD9F3KWgRHYvivUuAf/QfwDR+xM2eRKzF8paJmeG5O5yxy7X8iG8WERE4lj9bcOBm5iOzA24goz8IjHMPWcfKmfWvtxfLIlfsZT3ChlB03e6IiSc4J3MUr/E6kejjbGpEU7MHlkBJi80XbREa+xXweU6wWGR/2q3EFz1TUzMcUazmLvI7hhytqTkbNp5xFHsTwpYqa61GznLPIPnyNiIfYnfRtw7mkfyHrw44z+BExP/Embqu15Aq+s4H8Ac0VVmccwmN8Gebhe7wox7p2pyIy8jgNmWkoc0BzhU1P3HSehiduGp1IZtiMO9KP2tkiMzAXa+vVKS5/x86dG3U/ai8mO5MTvVKi1h8GOjo6ipQ/8BFQfs2w+z4AAAAASUVORK5CYII=" /></i
+            >Transacciones<i class="bx bx-chevron-right icon-right"></i
+          ></a>
+          <ul class="side-dropdown">
+            <div class="payment-cont">
+              <li>
+                <a href="#" id="payment1">Get Customer Codes With Payments In 2008</a>
+              </li>
+              
+            </div>
+          </ul>
+        </li>
+
+
+        
+        <li>
+          <a href="#"
+            ><i class="bx icon"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdklEQVR4nO3TQQrDMBDFUN3/0s4FSksIxfJEb20YPsKQQywpGiJDRWSoiAwVmVyEP1sN+WBJcdeSoiEyVESGishQERkqMrkIX97ePvTw9k+vGLITDZGhIpM/O1OG7ERDZKjI5M/OlCE70RAZKiJDRWSoiAzhDBfEW4DRmg/GugAAAABJRU5ErkJggg==" /></i
+            >Facturas<i class="bx bx-chevron-right icon-right"></i
+          ></a>
+          <ul class="side-dropdown">
+            <div class="orderDetail-cont">
+              <li>
+                <a href="#" id="orderDetail1">Count Distinct Products By Order</a>
+              </li>
+              
+            </div>
+          </ul>
+        </li>
+        
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- NAVBAR -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav id="navbar">
+        <i class="bx toggle-sidebar"
+          ><img
+            width="20px"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAY0lEQVR4nO3YUQ3AMAgFQGziZhZQ1DprZbCxu4R/SEPySgQAHSrXM6Gicp8JFd0NGCTnvsiasewAQIjxpztb1eDQuNubMEiK8QAwVL3guOYan9Lvbo/r9YP/yGpfVNd4gPiqCyoexJ1u76NsAAAAAElFTkSuQmCC"
+        /></i>
+        <form action="#"></form>
+
+        <span class="divider"></span>
+        <div class="profile">
+          <img
+            src="https://th.bing.com/th/id/R.1214cc6c68987d8cd09d62e08d96a824?rik=yGEmp8nggfzBaQ&pid=ImgRaw&r=0"
+            alt=""
+          />
+          <ul class="profile-link">
+            <li>
+              <a id="buttonClearToken" href="#"
+                ><i class="bx bxs-log-out-circle"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <div class="background"></div>
+      <main>
+		
+        <h1>welcome</h1>
+        <ul class="breadcrumbs">
+          <li><a href="./index.html">Home</a></li>
+          <li class="divider">/</li>
+          <li><a href="#" class="active" id="point">welcome</a></li>
+        </ul>
+        <br />
+        <br />
+        <h3 id="statement"></h3>
+
+        <section class="site"> 
+
+          <input type="text" id="search-input" placeholder="Buscar productos...">
+          <div id="countries-response"></div>
+          
+        </section>
+
+        <div class="info-data">
+          <div class="card">
+            <div class="head">
+              <div class="content-api">
+                <p>welcome</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- NAVBAR -->
+  </body>
+</html>
