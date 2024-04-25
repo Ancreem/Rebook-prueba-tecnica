@@ -15,7 +15,7 @@ public class Admin {
 
     private String password;
 
-    private String token;
+
 
     public Admin() {
     }
@@ -44,13 +44,6 @@ public class Admin {
         this.password = password;
     }
 
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
-    }
 
     @Override
     public String toString() {
@@ -58,7 +51,6 @@ public class Admin {
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
-                ", token='" + token + '\'' +
                 '}';
     }
 }

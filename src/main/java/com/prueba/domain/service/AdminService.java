@@ -6,10 +6,12 @@ import com.prueba.domain.repository.AdminRepository;
 import com.prueba.persistence.Admin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class AdminService {
     private final AdminRepository adminRepository;
 
@@ -62,7 +64,6 @@ public class AdminService {
                 Admin adminSend = optionalAdmin.get();
                 adminSend.setUsername(adminUpdate.getUsername());
                 adminSend.setPassword(adminUpdate.getPassword());
-                adminSend.setToken(adminUpdate.getToken());
                 adminRepository.save(adminSend);
 
                 return ResponseEntity.ok(adminSend);

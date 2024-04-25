@@ -23,7 +23,7 @@ public class WebSecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authz -> authz
-                        .requestMatchers(HttpMethod.POST, Constants.LOGIN_URL).permitAll()
+                        .requestMatchers(HttpMethod.POST, Constants.LOGIN_URL, Constants.REGISTER_URL).permitAll()
                         // Allow Swagger documentation HTML
                         .requestMatchers(HttpMethod.GET,
                                 "/doc/**",
